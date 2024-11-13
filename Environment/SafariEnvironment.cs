@@ -3,7 +3,7 @@
 
 namespace NcSafari.Environment
 {
-    internal abstract class SafariEnvironment<IEnvironmentAbility>(int maxSpeed)
+    internal abstract class SafariEnvironment<IAbility>(int maxSpeed) : IEnvironment
     {
         public int MaxSpeed { get; set; } = maxSpeed;
 
@@ -14,7 +14,7 @@ namespace NcSafari.Environment
         public void AddAnimalInEnvironment(Animal animal)
         {
             // if animal does not implement the correct environment ability
-            if (animal is not IEnvironmentAbility)
+            if (animal is not IAbility)
             {
                 Console.WriteLine("Animal cannot survive in this environment!");
                 return;
