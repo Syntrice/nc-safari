@@ -14,5 +14,10 @@ namespace NcSafari.Animals
         public float Weight { get; set; } = weight;
 
         public abstract void MakeSound();
+
+        public void Move()
+        {
+            Console.WriteLine($"animal moving");
+        }
     }
 }

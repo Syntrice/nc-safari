@@ -5,9 +5,11 @@ namespace NcSafari.Animals.Ability
     internal interface ITravel
     {
 
-        public int Speed { get; set; }
-        public Vector2 Position { get; set; }
-        public Vector2 Direction { get; set; }
+        int Speed { get; set; }
+        Vector2 Position { get; set; }
+        Vector2 Direction { get; set; }
+
+        void Move();
     }
 
     public enum Direction
