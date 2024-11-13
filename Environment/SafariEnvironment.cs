@@ -13,14 +13,14 @@ namespace NcSafari.Environment
 
         public void AddAnimalInEnvironment(Animal animal)
         {
-            animalsInEnvironment.Add(animal);
             if (animal.Speed > MaxSpeed)
             {
-                animal.Speed = MaxSpeed;
+                Console.WriteLine("Animal is moving faster than this envirnoment allows!");
+                return;
             }
+
+            animalsInEnvironment.Add(animal);
+            
         }
-
-
-
     }
 }

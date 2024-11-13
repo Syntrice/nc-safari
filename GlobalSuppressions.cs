@@ -6,3 +6,4 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Style", "IDE0290:Use primary constructor", Justification = "<Pending>", Scope = "member", Target = "~M:NcSafari.Utility.CompareWeight.#ctor(System.Boolean)")]
+[assembly: SuppressMessage("Style", "IDE0290:Use primary constructor", Justification = "<Pending>", Scope = "member", Target = "~M:NcSafari.Utility.WeightFormatter.#ctor(NcSafari.Animals.Animal)")]

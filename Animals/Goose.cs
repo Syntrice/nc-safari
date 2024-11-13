@@ -1,19 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NcSafari.Animals.Ability;
+﻿using NcSafari.Animals.Ability;
 
 namespace NcSafari.Animals
 {
-    internal class Goose : Bird, IFly, ISwim
+    internal class Goose(float weight, int speed) : Bird(weight, speed), IFly, ISwim
     {
-        public Goose(float weight, int speed) : base(weight, speed)
-        {
-
-        }
-
         public void Fly()
         {
             Console.WriteLine("Goose is flying");
