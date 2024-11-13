@@ -7,9 +7,9 @@ namespace NcSafari.Animals
     {
         public int Speed { get; set; } = speed;
 
-        public Vector2 Position { get; set; } = Vector2.Zero;
+        public Vector2 Position { get; set; } = new Vector2();
 
-        public Vector2 Direction { get; set; } = Vector2.Zero;
+        public Direction Direction { get; set; } = Direction.Up;
 
         public float Weight { get; set; } = weight;
 
@@ -17,7 +17,22 @@ namespace NcSafari.Animals
 
         public void Move()
         {
-            Console.WriteLine($"animal moving");
+            switch (Direction)
+            {
+                case Direction.Up:
+                    Position = new Vector2(Position.X, Position.Y + Speed);
+                    break;
+                case Direction.Down:
+                    Position = new Vector2(Position.X, Position.Y - Speed);
+                    break ;
+                case Direction.Left:
+                    Position = new Vector2(Position.X - Speed, Position.Y);
+                    break;
+                case Direction.Right:
+                    Position = new Vector2(Position.X - Speed, Position.Y);
+                    break;
+
+            }
         }
     }
 }

@@ -7,7 +7,7 @@ namespace NcSafari.Animals.Ability
 
         int Speed { get; set; }
         Vector2 Position { get; set; }
-        Vector2 Direction { get; set; }
+        Direction Direction { get; set; }
 
         void Move();
     }
