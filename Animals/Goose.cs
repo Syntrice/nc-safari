@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NcSafari.Animals.Ability;
 
-namespace NcSafari
+namespace NcSafari.Animals
 {
-    internal class Goose : Bird, IFly, ISwim 
+    internal class Goose : Bird, IFly, ISwim
     {
         public Goose(float weight, int speed) : base(weight, speed)
         {

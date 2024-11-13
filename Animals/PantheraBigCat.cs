@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NcSafari
+namespace NcSafari.Animals
 {
     internal class PantheraBigCat : Mammal
     {
@@ -15,7 +15,7 @@ namespace NcSafari
 
         public sealed override void MakeSound()
         {
-            Console.WriteLine(this.GetType().Name + " roars!");
+            Console.WriteLine(GetType().Name + " roars!");
         }
     }
 }

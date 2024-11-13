@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NcSafari
+namespace NcSafari.Animals
 {
-    internal class Bird : Animal
+    internal class Mammal : Animal
     {
-        public Bird(float weight, int speed) : base(weight, speed)
+        public Mammal(float weight, int speed) : base(weight, speed)
         {
         }
 

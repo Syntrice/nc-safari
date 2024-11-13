@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NcSafari.Animals;
 
-namespace NcSafari
+namespace NcSafari.Utility
 {
     internal class CompareWeight : IComparer<Animal>
     {
-        private bool _isAscendingOrder;
+        private readonly bool _isAscendingOrder;
 
         public CompareWeight(bool isAscendingOrder)
         {

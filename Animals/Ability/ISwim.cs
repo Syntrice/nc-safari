@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NcSafari
+namespace NcSafari.Animals.Ability
 {
-    internal interface ITravel
+    internal interface ISwim : ITravel
     {
-        public int GetSpeed();
-
+        void Swim();
     }
 }

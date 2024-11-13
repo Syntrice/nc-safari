@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NcSafari.Animals;
+using NcSafari.Animals.Ability;
 
-namespace NcSafari
+namespace NcSafari.Environment
 {
-    internal class HuntingGround : SafariEnvironment<IHunt>
+    internal class HuntingGround() : SafariEnvironment<IHunt>(3)
     {
-        public HuntingGround() : base(maxSpeed: 5)
-        {
-        }
         public override void CheckAnimalsInEnvironment()
         {
             foreach (Animal animal in animalsInEnvironment)
