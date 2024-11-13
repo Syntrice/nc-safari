@@ -42,10 +42,7 @@ namespace NcSafari.Environment
 
         public void Tick()
         {
-            foreach (IEnvironment environment in Environments)
-            {
-                environment.MoveAnimals();
-            }
+
         }
     }
 }

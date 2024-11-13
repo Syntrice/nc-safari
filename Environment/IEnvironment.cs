@@ -11,8 +11,6 @@ namespace NcSafari.Environment
     {
         public int MaxSpeed { get; set; }
 
-        void MoveAnimals();
-
         void AddAnimalInEnvironment(Animal animal);
 
         void CheckAnimalsInEnvironment();
