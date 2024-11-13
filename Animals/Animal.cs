@@ -1,4 +1,5 @@
 ﻿using NcSafari.Animals.Ability;
+using System.Numerics;
 
 namespace NcSafari.Animals
 {
@@ -6,15 +7,12 @@ namespace NcSafari.Animals
     {
         public int Speed { get; set; } = speed;
 
+        public Vector2 Position { get; set; } = Vector2.Zero;
+
+        public Vector2 Direction { get; set; } = Vector2.Zero;
+
         public float Weight { get; set; } = weight;
 
         public abstract void MakeSound();
-
-
-        public int GetSpeed()
-        {
-            return Speed;
-        }
-
     }
 }
