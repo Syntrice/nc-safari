@@ -8,6 +8,9 @@ namespace NcSafari
 {
     internal class HuntingGround : SafariEnvironment<IHunt>
     {
+        public HuntingGround() : base(maxSpeed: 5)
+        {
+        }
         public override void CheckAnimalsInEnvironment()
         {
             foreach (Animal animal in animalsInEnvironment)

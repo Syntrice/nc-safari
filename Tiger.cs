@@ -8,7 +8,7 @@ namespace NcSafari
 {
     internal class Tiger : PantheraBigCat, IHunt
     {
-        public Tiger(float weight) : base(weight)
+        public Tiger(float weight, int speed) : base(weight, speed)
         {
 
         }

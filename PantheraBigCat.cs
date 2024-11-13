@@ -8,7 +8,7 @@ namespace NcSafari
 {
     internal class PantheraBigCat : Mammal
     {
-        public PantheraBigCat(float weight) : base(weight)
+        public PantheraBigCat(float weight, int speed) : base(weight, speed)
         {
 
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NcSafari
 {
-    internal interface IFly
+    internal interface IFly : ITravel
     {
         void Fly(); 
     }

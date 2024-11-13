@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace NcSafari
 {
-    internal interface ISwim : ITravel
+    internal interface ITravel
     {
-        void Swim(); 
+        public int GetSpeed();
+
     }
 }

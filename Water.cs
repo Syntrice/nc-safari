@@ -8,6 +8,11 @@ namespace NcSafari
 {
     internal class Water : SafariEnvironment<ISwim>
     {
+
+        public Water() : base(maxSpeed : 5)
+        {
+        }
+
         public override void CheckAnimalsInEnvironment()
         {
             foreach (Animal animal in animalsInEnvironment)

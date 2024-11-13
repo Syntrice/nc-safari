@@ -8,7 +8,7 @@ namespace NcSafari
 {
     internal class Penguin : Bird, IHunt, ISwim
     {
-        public Penguin(float weight) : base(weight)
+        public Penguin(float weight, int speed) : base(weight, speed)
         {
 
         }

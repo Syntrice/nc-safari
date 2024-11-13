@@ -9,7 +9,7 @@ namespace NcSafari
     internal class Bat : Mammal, IHunt, IFly
     {
 
-        public Bat(float weight) : base(weight)
+        public Bat(float weight, int speed) : base(weight, speed)
         {
 
         }
@@ -23,6 +23,7 @@ namespace NcSafari
         {
             Console.WriteLine("Bat is flying");
         }
+
 
     }
 }

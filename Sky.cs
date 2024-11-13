@@ -8,6 +8,9 @@ namespace NcSafari
 {
     internal class Sky : SafariEnvironment<IFly>
     {
+        public Sky() : base(maxSpeed: 5)
+        {
+        }
         public override void CheckAnimalsInEnvironment()
         {
             foreach (Animal animal in animalsInEnvironment)

@@ -8,7 +8,7 @@ namespace NcSafari
 {
     internal class Goose : Bird, IFly, ISwim 
     {
-        public Goose(float weight) : base(weight)
+        public Goose(float weight, int speed) : base(weight, speed)
         {
 
         }

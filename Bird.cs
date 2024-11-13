@@ -8,7 +8,7 @@ namespace NcSafari
 {
     internal class Bird : Animal
     {
-        public Bird(float weight) : base(weight)
+        public Bird(float weight, int speed) : base(weight, speed)
         {
         }
 

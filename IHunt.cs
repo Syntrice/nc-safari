@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace NcSafari
 {
-    internal interface IHunt
+    internal interface IHunt : ITravel
     {
+
         void Hunt(); 
     }
 }
