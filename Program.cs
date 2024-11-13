@@ -8,7 +8,11 @@ namespace NcSafari
         static void Main(string[] args)
         {
             World world = new World();
-            world.Tick();
+            
+            for (int i = 0; i < 10; i++)
+            {
+                world.Tick();
+            }
 
         }
     }

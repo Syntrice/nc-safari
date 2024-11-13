@@ -11,12 +11,12 @@ namespace NcSafari.Environment
         {
             Animals = new List<Animal>
                 {
-                  new Tiger(70, 1),
-                  new Goose(5.2f, 1),
-                  new Bat(0.9f, 1),
-                  new Goose(4, 1),
-                  new Tiger(90, 1),
-                  new Penguin(15.8f, 1)
+                  new Tiger(70, 1, Direction.Down),
+                  new Goose(5.2f, 2, Direction.Left),
+                  new Bat(0.9f, 4, Direction.Right),
+                  new Goose(4, 2, Direction.Up),
+                  new Tiger(90, 3, Direction.Down),
+                  new Penguin(15.8f, 1, Direction.Left)
                 };
 
             Water water = new Water();
@@ -36,7 +36,20 @@ namespace NcSafari.Environment
 
         public void Tick()
         {
+            Console.WriteLine("Tick");
+            Console.WriteLine("{");
+            foreach (Animal animal in Animals)
+            {
+                animal.Move();
 
+                Console.Write($"Animal: {animal.GetType().Name}. ");
+                Console.Write($"Position: {animal.Position}, ");
+                Console.Write($"Direciton: {animal.Direction}, ");
+                Console.Write($"Speed: {animal.Speed}, ");
+                Console.WriteLine();
+            }
+            Console.WriteLine("}");
+            Console.WriteLine();
         }
     }
 }
