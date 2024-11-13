@@ -14,11 +14,13 @@ namespace NcSafari
 
             Water water = new Water();
 
-            Console.WriteLine(betty.GetSpeed());
+            Console.WriteLine(betty.Speed);
             water.AddAnimalInEnvironment(betty);
 
             water.CheckAnimalsInEnvironment();
-            Console.WriteLine(betty.GetSpeed());
+            Console.WriteLine(betty.Speed);
+            Console.WriteLine(betty.Direction);
+            Console.WriteLine(betty.Position);
 
         }
     }
