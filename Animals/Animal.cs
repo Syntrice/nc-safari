@@ -3,13 +3,13 @@ using System.Numerics;
 
 namespace NcSafari.Animals
 {
-    internal abstract class Animal(float weight, int speed = 3) : ITravel
+    internal abstract class Animal(float weight, int speed, Direction direction) : ITravel
     {
         public int Speed { get; set; } = speed;
 
         public Vector2 Position { get; set; } = new Vector2();
 
-        public Direction Direction { get; set; } = Direction.Up;
+        public Direction Direction { get; set; } = direction;
 
         public float Weight { get; set; } = weight;
 
@@ -29,7 +29,7 @@ namespace NcSafari.Animals
                     Position = new Vector2(Position.X - Speed, Position.Y);
                     break;
                 case Direction.Right:
-                    Position = new Vector2(Position.X - Speed, Position.Y);
+                    Position = new Vector2(Position.X + Speed, Position.Y);
                     break;
 
             }

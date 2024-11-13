@@ -2,7 +2,7 @@
 
 namespace NcSafari.Animals
 {
-    internal class Bat(float weight, int speed) : Mammal(weight, speed), IHunt, IFly
+    internal class Bat(float weight, int speed = 3, Direction direction = Direction.Up) : Mammal(weight, speed, direction), IHunt, IFly
     {
         public void Hunt()
         {

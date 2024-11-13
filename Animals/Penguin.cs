@@ -2,7 +2,7 @@
 
 namespace NcSafari.Animals
 {
-    internal class Penguin(float weight, int speed) : Bird(weight, speed), IHunt, ISwim
+    internal class Penguin(float weight, int speed = 3, Direction direction = Direction.Up) : Bird(weight, speed, direction), IHunt, ISwim
     {
         public void Hunt()
         {
