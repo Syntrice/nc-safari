@@ -1,6 +1,5 @@
 ﻿using NcSafari.Animals;
 
-
 namespace NcSafari.Environment
 {
     internal abstract class SafariEnvironment<IAbility>(int maxSpeed) : IEnvironment
@@ -28,6 +27,15 @@ namespace NcSafari.Environment
 
             animalsInEnvironment.Add(animal);
             
+        }
+
+        public void MoveAnimals()
+        {
+            foreach (Animal animal in animalsInEnvironment)
+            {
+                // not sure if this should be called on ITravel objects instead?
+                animal.Move();
+            }
         }
     }
 }
